@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+  "css": {
+    "linter": {
+      "enabled": false
+    }
+  },
+  "files": {
+    "includes": ["**"]
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
+  },
+  "linter": {
+    "rules": {
+      "recommended": true
+    }
+  }
+}
