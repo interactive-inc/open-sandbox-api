@@ -10,7 +10,7 @@
     "*.json": "json"
   },
   "files.exclude": {
-    ".wrangler": true,
+    ".wrangler": false,
     "bun.lock": true,
     "node_modules": true
   },

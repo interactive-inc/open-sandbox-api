@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "open-sandbox-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-09-30",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "MY_VAR": "my-variable"
+  },
+  "d1_databases": [
+    {
+      "binding": "MY_DB",
+      "database_name": "open-sandbox-database",
+      "database_id": "null",
+      "migrations_dir": "prisma/migrations"
+    }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}

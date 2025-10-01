@@ -6,7 +6,13 @@
     }
   },
   "files": {
-    "includes": ["**"]
+    "includes": [
+      "**",
+      "!worker-configuration.d.ts",
+      "!.wrangler",
+      "!prisma",
+      "!src/generated"
+    ]
   },
   "formatter": {
     "indentStyle": "space"

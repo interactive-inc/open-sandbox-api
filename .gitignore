@@ -1,3 +1,6 @@
+# Prisma
+/src/generated/prisma
+
 # prod
 dist/
 
