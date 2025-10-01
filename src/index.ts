@@ -1,9 +1,16 @@
-import { Hono } from 'hono'
+import { cors } from "hono/cors"
+import { factory } from "@/factory"
+import * as index from "@/routes/index"
+import * as posts from "@/routes/posts"
+import * as post from "@/routes/posts.$post"
 
-const app = new Hono()
+const app = factory.createApp()
 
-app.get('/', (c) => {
-  return c.text('Hello Hono!')
-})
+app.use("*", cors())
+
+app
+  .get("/", ...index.GET)
+  .get("/posts", ...posts.GET)
+  .get("/posts/:post", ...post.GET)
 
 export default app

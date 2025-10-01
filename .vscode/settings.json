@@ -19,7 +19,6 @@
   "search.exclude": {
     "bun.lock": true
   },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.preferences.autoImportFileExcludePatterns": [],
   "typescript.preferences.importModuleSpecifier": "non-relative"
 }

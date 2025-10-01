@@ -13,6 +13,7 @@ Sample RESTful API built with Hono framework and Cloudflare Workers. Provides se
 
 ## Technical Features
 
+- Bun
 - Hono web framework for lightweight API routing
 - Cloudflare Workers for serverless edge deployment
 - TypeScript for type safety
